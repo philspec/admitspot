@@ -2,7 +2,8 @@
 const nextConfig = {
     experimental: {
       appDir: true,
-      serverComponentsExternalPackages: ['@vercel/postgres']
+      serverComponentsExternalPackages: ['@vercel/postgres'],
+      runtime: 'nodejs'
     },
     webpack: (config) => {
       // Enhance module resolution
